@@ -1,0 +1,19 @@
+{
+  "name": "open-weather-api",
+  "version": "1.0.0",
+  "description": "This is a website to check the weather using open weather api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexScorpion100/open-weather-api.git"
+  },
+  "author": "AlexScorpion100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexScorpion100/open-weather-api/issues"
+  },
+  "homepage": "https://github.com/AlexScorpion100/open-weather-api#readme"
+}
