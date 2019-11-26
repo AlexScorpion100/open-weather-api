@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.col {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cd-top.js-cd-top.cd-top--fade-out.cd-top--show {
+  z-index: 99999;
+}
+
+.forecast-container {
+  margin-top: 15px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+@media (max-width: 500px) {
+  .forecast-container {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .statusTodayWeather {
+    margin-top: 20px;
+  }
+}
+
+.statusTodayWeather span {
+  margin-right: 10px;
+}
+
