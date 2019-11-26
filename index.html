@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Check The Weather</title>
     <meta property="og:image" content="assets/img/icon.png">
-    <meta name="description" content="This is a website responsive and beutifull that you can search on to see the current weather and info about a city!">
+    <meta name="description"
+        content="This is a website responsive and beutifull that you can search on to see the current weather and info about a city!">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
     <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
@@ -30,19 +31,26 @@
 <body id="body"><a class="cd-top js-cd-top cd-top--fade-out cd-top--show" href="#body"></a>
     <div id="particles-js"></div>
     <nav class="navbar navbar-light navbar-expand-lg sticky-top text-right shadow-lg">
-        <div class="container-fluid"><img class="navImageIcon" src="assets/img/icon.png" width="50px" height="50px"><a class="navbar-brand itemNavbar" href="#">Check Wheather</a><button data-toggle="collapse" class="navbar-toggler float-right" data-target="#navcol-1" style="width: 50px;height: 50px;"><i class="fa fa-bars" style="color: #0269A4;font-size: 31px;"></i></button>
-            <div
-                class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
+        <div class="container-fluid"><img class="navImageIcon" src="assets/img/icon.png" width="50px" height="50px"><a
+                class="navbar-brand itemNavbar" href="#">Check Wheather</a><button data-toggle="collapse"
+                class="navbar-toggler float-right" data-target="#navcol-1" style="width: 50px;height: 50px;"><i
+                    class="fa fa-bars" style="color: #0269A4;font-size: 31px;"></i></button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
                 <ul class="nav navbar-nav text-left">
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-home" href="#home"><i class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link itemNavbar" id="navLink-details" href="#details"><i class="fa fa-info marginLeft"></i>&nbsp;Details</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-forecast" href="#forecast"><i class="fa fa-flag marginLeft"></i>&nbsp;Forecast</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-favorites" href="#favorites"><i class="fa fa-star marginLeft"></i>&nbsp;Favorites</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-home" href="#home"><i
+                                class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link itemNavbar" id="navLink-details"
+                            href="#details"><i class="fa fa-info marginLeft"></i>&nbsp;Details</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-forecast"
+                            href="#forecast"><i class="fa fa-flag marginLeft"></i>&nbsp;Forecast</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-favorites"
+                            href="#favorites"><i class="fa fa-star marginLeft"></i>&nbsp;Favorites</a></li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
-    <section class="text-center" style="padding: 15px;margin-left: auto;margin-right: auto;margin-top: 15px;position: relative;width: 100%;">
+    <section class="text-center"
+        style="padding: 15px;margin-left: auto;margin-right: auto;margin-top: 15px;position: relative;width: 100%;">
         <div class="forecast-container" style="margin: 15px;margin-right: auto;margin-left: auto;">
             <div class="today forecast">
                 <div class="today forecast">
@@ -50,15 +58,25 @@
                         <h1 class="text-center" style="color: #ffffff;font-size: 27px;">Pesquisar Cidade</h1>
                     </div>
                     <div class="d-flex justify-content-center align-items-center forecast-content">
-                        <div class="text-center d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center align-items-xl-center location"><label style="color: rgb(255,255,255);margin-right: 10px;">City</label><input type="text" id="detalhesPesquisarCidadeInput" class="form-control" style="margin-right: 8px;"><button class="btn btn-primary" id="detalhesPesquisarCidadeBtn"
-                                type="button">Pesquisar</button></div>
+                        <div
+                            class="text-center d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center align-items-xl-center location">
+                            <label style="color: rgb(255,255,255);margin-right: 10px;">City</label><input type="text"
+                                id="detalhesPesquisarCidadeInput" class="form-control"
+                                style="margin-right: 8px;"><button class="btn btn-primary"
+                                id="detalhesPesquisarCidadeBtn" type="button">Pesquisar</button></div>
                     </div>
-                    <div class="text-center error" id="cidadeNotFound"><span class="text-center" style="width: 100%;">Cidade nao encontrada!!</span></div>
+                    <div class="text-center error" id="cidadeNotFound"><span class="text-center"
+                            style="width: 100%;">Cidade nao encontrada!!</span></div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container" id="contentLoader"></div>
+    <section class="text-center" id="sixFirstFavoritos"
+        style="position: relative; margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;">
+        <div id="contentLoader">
+
+        </div>
+    </section>
     <div class="footer-basic">
         <footer>
             <ul class="list-inline">

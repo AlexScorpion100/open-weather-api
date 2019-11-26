@@ -1,385 +1,425 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Check The Weather</title>
-    <meta property="og:image" content="assets/img/icon.png">
-    <meta name="description" content="This is a website responsive and beutifull that you can search on to see the current weather and info about a city!">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
-    <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
-    <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
-    <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
-    <link rel="icon" type="image/png" sizes="1919x1775" href="assets/img/icon.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/forecast.css">
-    <link rel="stylesheet" href="assets/css/top.css">
-    <link rel="stylesheet" href="assets/css/alertify.min.css">
-    <link rel="stylesheet" href="assets/css/container.css">
-    <link rel="stylesheet" href="assets/css/detalhes.css">
-</head>
-
-<body>
-    <section class="text-center" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;">
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
             </div>
-        </div>
-        <div class="d-inline-block forecast-container">
-            <div class="today forecast">
-                <div class="today forecast">
-                    <div class="forecast-header">
-                        <div class="day"><span>Monday<br></span></div>
-                        <div class="date"><span>6 Oct<br></span></div>
-                    </div>
-                    <div class="forecast-content">
-                        <div class="location"><span>New York<br></span></div>
-                        <div class="degree">
-                            <div class="num"><span>23ºC<br></span></div>
-                            <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
-                        </div>
-                        <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span></div>
-                    </div>
-                </div><button class="btn btn-primary" type="button" style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success" type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
-                <button
-                    class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
             </div>
-        </div>
-    </section>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/alertify.min.js"></script>
-    <script src="assets/js/nav.js"></script>
-    <script src="assets/js/stats.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/top.js"></script>
-    <script src="assets/js/detalhes.js"></script>
-    <script src="assets/js/particles.js"></script>
-</body>
-
-</html>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
+<div class="d-inline-block forecast-container">
+    <div class="today forecast">
+        <div class="today forecast">
+            <div class="forecast-header">
+                <div class="day"><span>Monday<br></span></div>
+                <div class="date"><span>6 Oct<br></span></div>
+            </div>
+            <div class="forecast-content">
+                <div class="location"><span>New York<br></span></div>
+                <div class="degree">
+                    <div class="num"><span>23ºC<br></span></div>
+                    <div class="forecast-icon"><img width="90" src="assets/img/icon.png"></div>
+                </div>
+                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella"
+                            style="font-size: 20px;"></i>&nbsp;20%</span><span style="font-size: 20px;"><i
+                            class="fas fa-wind" style="font-size: 20px;"></i>&nbsp;18km/h</span><span
+                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i>&nbsp;East</span>
+                </div>
+            </div>
+        </div><button class="btn btn-primary" type="button"
+            style="margin-bottom: 15px;margin-right: 5px;">Detalhes</button><button class="btn btn-success"
+            type="button" style="margin-bottom: 15px;margin-left: 5px;margin-right: 5px;">Forecast</button>
+        <button class="btn btn-danger" type="button" style="margin-bottom: 15px;margin-left: 5px;">Remove</button>
+    </div>
+</div>
