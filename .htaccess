@@ -1,0 +1,21 @@
+# HTID:6052729: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+
+#HTTPS force
+#RewriteRule ^(.*)$ https://https://weather-miniacs.000webhostapp.com [R,L]
+
+#Custom 403 forbiden
+#ErrorDocument 403 /pages/error/403.php
+
+#404 error page
+#ErrorDocument 404 /pages/error/404.php
+
+#php files not use .php
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+#Prevent directory listings
+Options All -Indexes
+#DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:3886776:
