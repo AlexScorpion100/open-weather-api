@@ -162,7 +162,6 @@ var cityName = {
     template: {
         type: "custom",
         method: function(value, item) {
-
             return "<b>" + item.name + "</b> - " + item.sys.country;
         }
     }
