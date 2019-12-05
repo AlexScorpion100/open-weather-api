@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="assets/css/alertify.min.css">
     <link rel="stylesheet" href="assets/css/container.css">
     <link rel="stylesheet" href="assets/css/detalhes.css">
+    <link rel="stylesheet" href="assets/easy-autocomplete/easy-autocomplete.min.css">
+
 </head>
 
 <body id="body">
@@ -58,7 +60,7 @@
                                 align-items-sm-center justify-content-md-center
                                 align-items-md-center justify-content-lg-center
                                 align-items-lg-center align-items-xl-center
-                                location"><input type="text" id="detalhesPesquisarCidadeInput" class="form-control" style="margin-right:
+                                location"><input autocomplete="on" type="text" id="detalhesPesquisarCidadeInput" class="form-control" style="margin-right:
                                     8px;width: 124px;" /><button class="btn
                                     btn-primary" id="detalhesPesquisarCidadeBtn" type="button" style="margin-left: -14px;"><i
                                         class="fa fa-search"></i></button></div>
@@ -85,6 +87,7 @@
             <p class="copyright">Weather Miniacs © 2019</p>
         </footer>
     </div>
+    <input id="provider-json" />
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -93,8 +96,9 @@
     <script src="assets/js/stats.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/top.js"></script>
-    <script src="assets/js/detalhes.js"></script>
     <script src="assets/js/particles.js"></script>
+    <script src="assets/easy-autocomplete/jquery.easy-autocomplete.min.js"></script>
+    <script src="assets/js/search.js"></script>
 </body>
 
 </html>
