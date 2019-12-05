@@ -45,11 +45,11 @@ function unixTimeComverter(unixtime) {
 }
 
 //funcao para pedir infomaçao ao site
-function requestData(city) {
+function requestData(city, country) {
     $.ajax({
         type: "POST", //rest Type
         dataType: 'jsonp', //mispelled
-        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=f56b2228d2888531cedd5596dd2be12c',
+        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + country + '&appid=f56b2228d2888531cedd5596dd2be12c',
         async: false,
         contentType: "application/json; charset=utf-8",
         success: function(msg) {
@@ -133,35 +133,27 @@ function limpar() {
 }
 
 //autocomple
-/*$('#detalhesPesquisarCidadeInput').autocomplete({
-    source: function(request, response) {
-        $.getJSON("https://api.openweathermap.org/data/2.5/find?&q=cordoba&type=like&sort=population&cnt=30&appid=f56b2228d2888531cedd5596dd2be12c", function(data) {
-            response($.map(list.name, function(value, key) {
-                return {
-                    label: value,
-                    value: key
-                };
-            }));
-        });
+var cityName = {
+    url: function(phrase) {
+        return "https://api.openweathermap.org/data/2.5/find?&q=" + phrase + "&type=like&sort=population&cnt=30&appid=f56b2228d2888531cedd5596dd2be12c";
     },
-    minLength: 2,
-    delay: 100
-});*/
-
-var options = {
-    url: "assets\test.json",
-
+    listLocation: "list",
     getValue: "name",
 
     list: {
-        match: {
-            enabled: true
+        onClickEvent: function() {
+            var value = $("#detalhesPesquisarCidadeInput").getSelectedItemData();
+            requestData(value.name, value.sys.country);
         }
     },
+    template: {
+        type: "custom",
+        method: function(value, item) {
 
-    getValue: function(element) {
-        return element.name;
+            return "<b>" + item.name + "</b> - " + item.sys.country;
+        }
     }
 };
 
-$("#provider-json").easyAutocomplete(options);
+//liga o autocomplete
+$("#detalhesPesquisarCidadeInput").easyAutocomplete(cityName);

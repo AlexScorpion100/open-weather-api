@@ -29,43 +29,27 @@
     <link rel="stylesheet" href="assets/css/container.css">
     <link rel="stylesheet" href="assets/css/detalhes.css">
     <link rel="stylesheet" href="assets/easy-autocomplete/easy-autocomplete.min.css">
-
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/easy-autocomplete/jquery.easy-autocomplete.min.js"></script>
 </head>
 
 <body id="body">
     <a class="cd-top js-cd-top cd-top--fade-out cd-top--show" href="#body"></a>
     <div id="particles-js"></div>
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top text-right
-            shadow-lg">
-        <div class="container-fluid"><img class="navImageIcon" src="assets/img/icon.png" width="50px" height="50px"><a class="navbar-brand itemNavbar" href="#">Check Wheather</a><button data-toggle="collapse" class="navbar-toggler float-right" data-target="#navcol-1" style="width: 50px;height: 50px;"><i
-                        class="fa fa-bars" style="color: #0269A4;font-size:
-                        31px;"></i></button>
-            <div class="collapse navbar-collapse d-lg-flex
-                    justify-content-lg-end" id="navcol-1">
-                <ul class="nav navbar-nav text-left">
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-home" href="#home"><i
-                                    class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link itemNavbar" id="navLink-details" href="#details"><i class="fa fa-info
-                                    marginLeft"></i>&nbsp;Details</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-forecast" href="#forecast"><i class="fa fa-flag
-                                    marginLeft"></i>&nbsp;Forecast</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navLink-favorites" href="#favorites"><i class="fa fa-star
-                                    marginLeft"></i>&nbsp;Favorites</a></li>
-                    <li role="presentation" class="nav-item d-flex d-xl-flex
-                            justify-content-center align-items-center
-                            justify-content-xl-center align-items-xl-center">
-                        <div class="text-center d-flex d-sm-flex d-md-flex
-                                d-lg-flex d-xl-flex justify-content-center
-                                align-items-center justify-content-sm-center
-                                align-items-sm-center justify-content-md-center
-                                align-items-md-center justify-content-lg-center
-                                align-items-lg-center align-items-xl-center
-                                location"><input autocomplete="on" type="text" id="detalhesPesquisarCidadeInput" class="form-control" style="margin-right:
-                                    8px;width: 124px;" /><button class="btn
-                                    btn-primary" id="detalhesPesquisarCidadeBtn" type="button" style="margin-left: -14px;"><i
-                                        class="fa fa-search"></i></button></div>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-light navbar-expand-xl sticky-top shadow-lg">
+        <div class="container-fluid"><img class="navImageIcon" src="/assets/img/icon.png" width="50px" height="50px" /><a class="navbar-brand itemNavbar" href="#">Check Wheather</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler float-right" style="width: 50px;height: 50px;"><i
+                    class="fa fa-bars" style="color: #0269A4;font-size: 31px;"></i></button>
+            <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end show" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="index.html"><i
+                                class="fa fa-home marginLeft"></i> Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link itemNavbar" href="detalhes.html"><i
+                                class="fa fa-info marginLeft"></i> Detalhes</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="#"><i
+                                class="fa fa-flag marginLeft"></i> Forecast</a></li>
+                    <li role="presentation" class="nav-item" style="margin-right: 15px;"><a class="nav-link" href="favoritos.html"><i
+                                class="fa fa-star marginLeft"></i> Favoritos</a></li>
+                </ul><input type="search" id="detalhesPesquisarCidadeInput" placeholder="Leiria" class="search-field" name="search" />
             </div>
         </div>
     </nav>
@@ -88,7 +72,6 @@
         </footer>
     </div>
     <input id="provider-json" />
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/alertify.min.js"></script>
@@ -97,7 +80,6 @@
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/top.js"></script>
     <script src="assets/js/particles.js"></script>
-    <script src="assets/easy-autocomplete/jquery.easy-autocomplete.min.js"></script>
     <script src="assets/js/search.js"></script>
 </body>
 
