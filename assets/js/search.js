@@ -155,7 +155,6 @@ var cityName = {
         onClickEvent: function() {
             var value = $("#detalhesPesquisarCidadeInput").getSelectedItemData();
             requestData(value.name, value.sys.country);
-            $("#navLink-details").trigger("click");
         }
     },
     theme: "round",
