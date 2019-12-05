@@ -141,11 +141,23 @@ var cityName = {
     getValue: "name",
 
     list: {
+        match: {
+            enabled: true
+        },
+        showAnimation: {
+            type: "slide",
+            time: 300
+        },
+        hideAnimation: {
+            type: "slide",
+            time: 300
+        },
         onClickEvent: function() {
             var value = $("#detalhesPesquisarCidadeInput").getSelectedItemData();
             requestData(value.name, value.sys.country);
         }
     },
+    theme: "round",
     template: {
         type: "custom",
         method: function(value, item) {
