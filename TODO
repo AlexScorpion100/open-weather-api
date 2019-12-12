@@ -1,4 +1,5 @@
 - criar um script para corrigir o bug da pesquisa nao estar a guardar ✔
 - para o favoritos e home e usar Each e clone para colonar a bases
 - forescast unir nos detalhes
-- search bar na nav bar 
+- search bar na nav bar ✔
+- juntar a pagina detalhes com o forescast e reunomiar para pagina pesquisa
