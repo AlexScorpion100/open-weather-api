@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    window.onload = function () {
+$(document).ready(function() {
+    window.onload = function() {
         contentToDisplay(run());
     };
 });
@@ -13,7 +13,7 @@ function run() {
 };
 
 //nav bar click on go
-$(".nav-link").on('click', function (event) {
+$(".nav-link").on('click', function(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
     activeClear();
@@ -22,7 +22,7 @@ $(".nav-link").on('click', function (event) {
 });
 
 //footer clicable
-$(".list-inline-item a").on('click', function (event) {
+$(".list-inline-item a").on('click', function(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
     contentToDisplay($(this).attr('href'));
@@ -47,4 +47,40 @@ function contentToDisplay(url) {
         $("#contentLoader").load(window.location.pathname + urlgood + ".html");
     }
     return false;
+}
+
+$(document).ready(function() {
+    getIpData(getIp());
+});
+
+function getIp() {
+    $.ajax({
+        type: "POST", //rest Type
+        dataType: 'jsonp', //mispelled
+        url: 'https://api.ipify.org?format=jsonp',
+        contentType: "application/json; charset=utf-8",
+        success: function(msg) {
+            console.log(msg.ip);
+            return msg.ip;
+        },
+        error: function(e) {
+            console.log(e);
+        }
+    });
+}
+
+function getIpData(ip) {
+    var api_key = "at_Oh4jnBql4yVOurXsUt7eROi0M7FPL";
+    $.ajax({
+        url: "https://geo.ipify.org/api/v1",
+        dataType: "jsonp",
+        data: { apiKey: api_key, ipAddress: ip },
+        success: function(data) {
+            $("body").append("<pre>" + JSON.stringify(data, "", 2) + "</pre>");
+            alert("yeah");
+        },
+        error: function(e) {
+            console.log(e);
+        }
+    });
 }
