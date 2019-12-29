@@ -47,11 +47,34 @@ body {
 
 @media (max-width: 500px) {
   .statusTodayWeather {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
 .statusTodayWeather span {
   margin-right: 10px;
+}
+
+.box select {
+  margin-top: 15px;
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: auto;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
 }
 

@@ -24,7 +24,7 @@
 }
 
 .forecast-container .forecast.today {
-  width: 420px;
+  width: 325px;
 }
 
 .forecast-container .forecast.today .forecast-header {
@@ -66,7 +66,7 @@
 
 .forecast-container .forecast.today .degree .num {
   font-size: 90px;
-  font-size: 6.4285714286rem;
+  font-size: 3.4285714286rem;
   margin-right: 30px;
 }
 
@@ -115,5 +115,19 @@
 .forecast-container .forecast .forecast-content small {
   font-size: 16px;
   font-size: 1.1428571429em;
+}
+
+.statusTodayWeather {
+  margin-top: 12px;
+}
+
+.divid {
+  width: 100%;
+}
+
+@media (max-width: 1140px) {
+  .divid {
+    display: none;
+  }
 }
 
