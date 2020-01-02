@@ -34,54 +34,27 @@
     <link rel="stylesheet" href="assets/css/sweet-alert/borderless.min.css">
 </head>
 
-<body id="top"><a class="cd-top js-cd-top cd-top--fade-out cd-top--show" style="background-image:url(&quot;assets/img/cd-top-arrow.svg&quot;);" href="#top"></a>
+<body><a class="cd-top js-cd-top cd-top--fade-out cd-top--show" style="background-image:url(&quot;assets/img/cd-top-arrow.svg&quot;);" href="#top"></a>
     <div id="particles-js"></div>
     <nav class="navbar navbar-light navbar-expand-xl sticky-top shadow-lg" style="padding-top: 0;">
         <div class="container"><img class="navImageIcon" src="assets/img/icon.png" width="50px" height="50px"><a class="navbar-brand itemNavbar" href="index.html">Check Wheather</a><button data-toggle="collapse" class="navbar-toggler float-right" data-target="#navcol-1" style="width: 50px;height: 50px;"><i class="fa fa-bars" style="color: #0269A4;font-size: 31px;"></i></button>
             <div
                 class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-1">
                 <ul class="nav navbar-nav text-left">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="favourites.html"><i class="fa fa-star marginLeft"></i>&nbsp;Favourites</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="navBarSearch" href="search.html"><i class="fa fa-search marginLeft"></i>&nbsp;Search</a></li>
-                    <li class="nav-item d-flex justify-content-start align-items-center" role="presentation" style="background-color: rgba(0,0,0,0);"><input type="search" id="detalhesPesquisarCidadeInput" placeholder="Leiria" style="font-size: 20px;width: 150px;"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="favourites.html"><i class="fa fa-star marginLeft"></i>&nbsp;Favourites</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="search.html"><i class="fa fa-search marginLeft"></i>&nbsp;Search</a></li>
+                    <li class="nav-item d-flex justify-content-start align-items-center" role="presentation" style="background-color: rgba(0,0,0,0);"><input type="search" id="detalhesPesquisarCidadeInput" placeholder="Leiria"></li>
                 </ul>
         </div>
         </div>
     </nav>
     <div id="page-container">
         <div id="content-wrap">
-            <section class="text-center" id="yourCity" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
+            <section class="text-center" id="favoritos" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
                 <div class="d-flex justify-content-center align-items-center" style="width: 50%;margin-right: auto;margin-left: auto;">
                     <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-                    <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-home"></i>&nbsp;YourCity&nbsp;<br><i class="fa fa-home"></i></h1>
-                    <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-                </div>
-                <div class="d-inline-block forecast-container">
-                    <div class="today forecast">
-                        <div class="today forecast">
-                            <div class="forecast-header">
-                                <div class="day"><span id="spanDayHomeLocation">--------<br></span></div>
-                                <div class="date"><span id="spanDateHomeLocation">- ---<br></span></div>
-                            </div>
-                            <div class="forecast-content">
-                                <div class="location"><span id="spanCityHomeLocation">---------<br></span></div>
-                                <div class="degree">
-                                    <div class="num"><span id="spanHomeTemperatureLocation">--ºC<br></span></div>
-                                    <div class="forecast-icon"><img id="imgHomeEstadoImagemLocation" width="90"></div>
-                                </div>
-                                <div class="statusTodayWeather"><span style="font-size: 20px;"><i class="fa fa-umbrella" style="font-size: 20px;"></i><span id="spanHomePercepitacaoLocation">&nbsp;--%</span></span><span style="font-size: 20px;"><i class="fas fa-wind" style="font-size: 20px;"></i><span id="spanHomewindSpeedLocation">&nbsp;--km/h</span></span>
-                                    <span
-                                        style="font-size: 20px;"><i class="fa fa-compass" style="font-size: 20px;"></i><span id="spanHomeWindDerectionLocation">&nbsp;--</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><a class="btn btn-primary" role="button" data-bs-hover-animate="jello" id="homeButtonDetalhes" style="margin-bottom: 15px;margin-right: 5px;" href="search.html">Detalhes</a></div>
-            </section>
-            <section class="text-center" id="sixFirstFavoritos" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
-                <div class="d-flex justify-content-center align-items-center" style="width: 50%;margin-right: auto;margin-left: auto;">
-                    <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-                    <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-star"></i>&nbsp;Highlights&nbsp;<br><i class="fa fa-star"></i></h1>
+                    <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-star"></i>&nbsp;Favourites&nbsp;<br><i class="fa fa-star"></i></h1>
                     <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
                 </div>
                 <div class="fav_container">

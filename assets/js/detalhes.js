@@ -1,11 +1,15 @@
 //funcao que so executa no fim da pagina tar totalmente carregada
 $(document).ready(function() {
-    if ($('#detalhesPesquisarCidadeInput').val().length == 0) {
-        var currentCity = JSON.parse(localStorage.getItem('currentCity'));
-        requestData(currentCity.city, currentCity.country);
-        getForecast(currentCity.city, currentCity.country);
-        $('#detalhesPesquisarCidadeInput').attr("placeholder", currentCity.city + " - " + currentCity.country);
-    }
+        if (localStorage.getItem("currentCity") === null) {
+            var home = JSON.parse(localStorage.getItem('homeCity'));
+            requestData(home.city, home.country);
+            getForecast(home.city, home.country);
+        } else {
+            var currentCity = JSON.parse(localStorage.getItem('currentCity'));
+            requestData(currentCity.city, currentCity.country);
+            getForecast(currentCity.city, currentCity.country);
+            $('#detalhesPesquisarCidadeInput').attr("placeholder", currentCity.city + " - " + currentCity.country);
+        }
     existeCidade();
 });
 
@@ -20,8 +24,7 @@ function unixTimeComverter(unixtime) {
 }
 
 //funcao para pedir infomaçao ao site
-function
-requestData(city, country) {
+function requestData(city, country) {
     $.ajax({
         type: "POST", //rest Type
         dataType: 'jsonp', //mispelled
@@ -29,6 +32,7 @@ requestData(city, country) {
         async: false,
         contentType: "application/json; charset=utf-8",
         success: function(msg) {
+            console.log(msg);
             loadCityData(msg);
         },
         error: function() {
@@ -74,7 +78,7 @@ function degToDirecoes(deg) {
 function loadCityData(msg) {
     var city = { 'country': msg.sys.country, 'city': msg.name };
     localStorage.setItem('currentCity', JSON.stringify(city));
-
+    existeCidade();
     $('#divSearchResults').show();
     $('#detalhesResultadosName').text("Resultados - " + msg.name + " " + msg.sys.country + " " + kelvinToC(msg.main.temp).toFixed(2) + "ºC");
     $('#detalhesTemperaturaMinima').text(kelvinToC(msg.main.temp_min).toFixed(2) + 'ºC');
@@ -99,6 +103,8 @@ $("#searchFavorites").click(function() {
     var countID = 0;
     favorites = JSON.parse(localStorage.getItem('favoriteCities'));
     if (localStorage.getItem("favoriteCities") === null) {
+        $('#searchFavorites').attr('src', 'assets/img/star-full.svg');
+        alertify.success("City: " + currentCity.city + " Added to favorites.");
         favorites = [{ 'country': currentCity.country, 'city': currentCity.city }];
         localStorage.setItem("favoriteCities", JSON.stringify(favorites));
     } else {
@@ -166,11 +172,20 @@ function getForecast(city, country) {
 
 //funcao para verificar se a cidade existe
 function existeCidade() {
+    var fav = 0;
     var currentCity = JSON.parse(localStorage.getItem('currentCity'));
     var favorites = JSON.parse(localStorage.getItem('favoriteCities'));
+    if (localStorage.getItem("favoriteCities") != null) {
     favorites.forEach(element => {
+        console.log(element.city, currentCity.city, element.country, currentCity.country);
         if (element.city == currentCity.city && element.country == currentCity.country) {
-            $('#searchFavorites').attr('src', 'assets/img/star-full.svg');
+            fav = 1;
         }
     });
+    if (fav == 1) {
+        $('#searchFavorites').attr('src', 'assets/img/star-full.svg');
+    } else {
+        $('#searchFavorites').attr('src', 'assets/img/star-notfull.svg');
+    }
+    }
 }

@@ -35,147 +35,136 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
-    <a class="cd-top js-cd-top cd-top--fade-out cd-top--show" style="background-image:url(&quot;assets/img/cd-top-arrow.svg&quot;);" href="#top"></a>
+    <div id="particles-js"></div><a class="cd-top js-cd-top cd-top--fade-out cd-top--show" style="background-image:url(&quot;assets/img/cd-top-arrow.svg&quot;);" href="#top"></a>
     <nav class="navbar navbar-light navbar-expand-xl sticky-top shadow-lg" style="padding-top: 0;">
-        <div class="container"><img class="navImageIcon" src="assets/img/icon.png" width="50px" height="50px"><a class="navbar-brand itemNavbar" href="index.html">Check Wheather</a><button data-toggle="collapse" class="navbar-toggler float-right" data-target="#navcol-1" style="width: 50px;height: 50px;"><i
-                    class="fa fa-bars" style="color: #0269A4;font-size: 31px;"></i></button>
-            <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-1">
+        <div class="container"><img class="navImageIcon" src="assets/img/icon.png" width="50px" height="50px"><a class="navbar-brand itemNavbar" href="index.html">Check Wheather</a><button data-toggle="collapse" class="navbar-toggler float-right" data-target="#navcol-1" style="width: 50px;height: 50px;"><i class="fa fa-bars" style="color: #0269A4;font-size: 31px;"></i></button>
+            <div
+                class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-1">
                 <ul class="nav navbar-nav text-left">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i
-                                class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="favorites.html"><i
-                                class="fa fa-star marginLeft"></i>&nbsp;Favorites</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="search.html"><i
-                                class="fa fa-search marginLeft"></i>&nbsp;Search</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fa fa-home marginLeft"></i>&nbsp;Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="favourites.html"><i class="fa fa-star marginLeft"></i>&nbsp;Favourites</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="search.html"><i class="fa fa-search marginLeft"></i>&nbsp;Search</a></li>
                     <li class="nav-item d-flex justify-content-start align-items-center" role="presentation" style="background-color: rgba(0,0,0,0);"><input type="search" id="detalhesPesquisarCidadeInput" placeholder="Leiria" style="font-size: 20px;width: 150px;"></li>
                 </ul>
-            </div>
+        </div>
         </div>
     </nav>
-    <section class="text-center" id="detailsCtiy" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
-        <div class="d-flex justify-content-center align-items-center" style="width: 50%;margin-right: auto;margin-left: auto;">
-            <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-            <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-info-circle"></i>&nbsp;Details&nbsp;<br><i class="fa fa-info-circle"></i></h1>
-            <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-        </div>
-        <div class="forecast-container" style="margin: 15px;margin-right: auto;margin-left: auto;">
-            <div class="d-sm-flex justify-content-sm-center today forecast" style="width: 100%;">
-                <div id="divSearchResults" class="today forecast" style="width: 100%;">
-                    <div class="forecast-header" style="width: 100%;">
-                        <h1 class="text-center" id="detalhesResultadosName" style="color: #ffffff;font-size: 27px;">
-                            Resultados - ---</h1>
-                        <img id="searchFavorites" width="50px" height="50px" src="assets/img/star-notfull.svg">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div data-toggle="tooltip" data-bs-tooltip="" class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Weather state."><img class="d-inline-block" id="detalhesEstadoImagem" src="http://openweathermap.org/img/wn/02d@2x.png" width="78">
-                                    <p id="detalhesEstado" style="font-size: 35px;margin-left: 14px;">---</p>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div data-toggle="tooltip" data-bs-tooltip="" class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Minimal Temperature"><img class="d-inline-block" src="assets/img/cold.svg" width="76">
-                                    <p id="detalhesTemperaturaMinima" style="font-size: 35px;margin-left: 14px;">
-                                        --ºC<br></p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Maximal Temperature"><img class="d-inline-block" src="assets/img/hot.svg" width="76">
-                                    <p id="detalhesTemperaturaMaxima" style="font-size: 35px;margin-left: 14px;">
-                                        --ºc<br></p>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Wind Speed in km/h and Derection"><img class="d-inline-block" src="assets/img/wind.svg" width="76">
-                                    <p id="detalhesWindSpeed" style="font-size: 35px;margin-left: 14px;">--km/h<br></p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Clounds in the Sky"><img class="d-inline-block" src="assets/img/clouds.svg" width="76">
-                                    <p id="detalhesClouds" style="font-size: 35px;margin-left: 14px;">---%<br></p>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Humidity of the air"><img src="assets/img/drop.svg" width="76">
-                                    <p id="deatalhesHumidade" style="font-size: 35px;margin-left: 14px;">---%<br></p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Pressure Atemosferic"><img src="assets/img/pressure-gauge.svg" width="76">
-                                    <p id="detalhesPressao" style="font-size: 35px;margin-left: 14px;">----p<br></p>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Sunrise"><img src="assets/img/sunrise.svg" width="76">
-                                    <p id="detalhesSunriseTime" style="font-size: 35px;margin-left: 14px;">
-                                        --h:--m:--s<br></p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Sunset"><img src="assets/img/sunset.svg" width="76">
-                                    <p id="detalhesSunsetTime" style="font-size: 35px;margin-left: 14px;">
-                                        --h:--m:--s<br></p>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Coordinates LAT"><img src="assets/img/placeholder.svg" width="76">
-                                    <p id="detalhesCoordenadasLat" style="font-size: 35px;margin-left: 14px;">lat: ---
-                                        <br></p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Cordinates LON"><img src="assets/img/placeholder.svg" width="76">
-                                    <p id="detalhesCoordenadasLon" style="font-size: 35px;margin-left: 14px;">lon: ---
-                                        <br></p>
+    <div id="page-container">
+        <div id="content-wrap">
+            <section class="text-center" id="detailsCtiy" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 50%;margin-right: auto;margin-left: auto;">
+                    <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
+                    <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-info-circle"></i>&nbsp;Details&nbsp;<br><i class="fa fa-info-circle"></i></h1>
+                    <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
+                </div>
+                <div class="forecast-container" style="margin: 15px;margin-right: auto;margin-left: auto;">
+                    <div class="d-sm-flex justify-content-sm-center today forecast" style="width: 100%;">
+                        <div id="divSearchResults" class="today forecast" style="width: 100%;">
+                            <div class="forecast-header" style="width: 100%;">
+                                <h1 class="text-center" id="detalhesResultadosName" style="color: #ffffff;font-size: 27px;">Resultados - ---</h1><img id="searchFavorites" width="50px" height="50px" src="assets/img/star-notfull.svg"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div data-toggle="tooltip" data-bs-tooltip="" class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Weather state."><img class="d-inline-block" id="detalhesEstadoImagem" src="http://openweathermap.org/img/wn/02d@2x.png" width="78">
+                                            <p id="detalhesEstado" style="font-size: 35px;margin-left: 14px;">---</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div data-toggle="tooltip" data-bs-tooltip="" class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Minimal Temperature"><img class="d-inline-block" src="assets/img/cold.svg" width="76">
+                                            <p id="detalhesTemperaturaMinima" style="font-size: 35px;margin-left: 14px;">--ºC<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Maximal Temperature"><img class="d-inline-block" src="assets/img/hot.svg" width="76">
+                                            <p id="detalhesTemperaturaMaxima" style="font-size: 35px;margin-left: 14px;">--ºc<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Wind Speed in km/h and Derection"><img class="d-inline-block" src="assets/img/wind.svg" width="76">
+                                            <p id="detalhesWindSpeed" style="font-size: 35px;margin-left: 14px;">--km/h<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Clounds in the Sky"><img class="d-inline-block" src="assets/img/clouds.svg" width="76">
+                                            <p id="detalhesClouds" style="font-size: 35px;margin-left: 14px;">---%<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Humidity of the air"><img src="assets/img/drop.svg" width="76">
+                                            <p id="deatalhesHumidade" style="font-size: 35px;margin-left: 14px;">---%<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Pressure Atemosferic"><img src="assets/img/pressure-gauge.svg" width="76">
+                                            <p id="detalhesPressao" style="font-size: 35px;margin-left: 14px;">----p<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Sunrise"><img src="assets/img/sunrise.svg" width="76">
+                                            <p id="detalhesSunriseTime" style="font-size: 35px;margin-left: 14px;">--h:--m:--s<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Sunset"><img src="assets/img/sunset.svg" width="76">
+                                            <p id="detalhesSunsetTime" style="font-size: 35px;margin-left: 14px;">--h:--m:--s<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Coordinates LAT"><img src="assets/img/placeholder.svg" width="76">
+                                            <p id="detalhesCoordenadasLat" style="font-size: 35px;margin-left: 14px;">lat: ---<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center location" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Cordinates LON"><img src="assets/img/placeholder.svg" width="76">
+                                            <p id="detalhesCoordenadasLon" style="font-size: 35px;margin-left: 14px;">lon: ---<br></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="text-center" id="detailsCtiyForecast" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
-        <div class="d-flex justify-content-center align-items-center" style="width: 50%;margin-right: auto;margin-left: auto;">
-            <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-            <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-info-circle"></i>&nbsp;Forecast&nbsp;<br><i class="fa fa-info-circle"></i></h1>
-            <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
-        </div>
-        <div class="forecast-container" style="margin: 15px;margin-right: auto;margin-left: auto;">
-            <div class="d-sm-flex justify-content-sm-center today forecast" style="width: 100%;">
-                <div id="divSearchResultsForecast" class="today forecast" style="width: 100%;">
-                    <div class="forecast-header" style="width: 100%;">
-                        <h1 class="text-center" id="detalhesResultadosNameForecast" style="color: #ffffff;font-size: 27px;">Resultados - ---</h1>
-                    </div>
-                    <div style="padding: 15px;">
-                        <div class="box"><select id="detalhesSelectTime"></select></div>
-                        <p id="detalhesDescriptionTime" style="font-size: 35px;margin-left: 14px;">-------</p>
-                        <p id="detalhesCurrentTempTime" style="font-size: 35px;margin-left: 14px;">-------</p><img id="detalhesImgTime" width="150">
-                        <div class="d-sm-flex align-items-sm-center">
-                            <div class="d-flex justify-content-center align-items-center col" style="margin-top: 15px;margin-bottom: 15px;"><img class="d-inline-block" src="assets/img/cold.svg" width="76">
-                                <p id="detalhesTemperaturaMinimaTime" style="font-size: 35px;margin-left: 14px;">
-                                    --ºC<br></p>
+            </section>
+            <section class="text-center" id="detailsCtiyForecast" style="position: relative;margin-top: 25px;width: 90%;margin-right: auto;margin-left: auto;margin-bottom: 30px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 50%;margin-right: auto;margin-left: auto;">
+                    <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
+                    <h1 class="d-flex d-sm-flex justify-content-center justify-content-sm-center align-items-md-center" style="margin-right: 15px;margin-left: 15px;color: rgb(2,105,164);"><i class="fa fa-info-circle"></i>&nbsp;Forecast&nbsp;<br><i class="fa fa-info-circle"></i></h1>
+                    <hr style="background-color: rgb(2,105,164);height: 4px;width: 100%;">
+                </div>
+                <div class="forecast-container" style="margin: 15px;margin-right: auto;margin-left: auto;">
+                    <div class="d-sm-flex justify-content-sm-center today forecast" style="width: 100%;">
+                        <div id="divSearchResultsForecast" class="today forecast" style="width: 100%;">
+                            <div class="forecast-header" style="width: 100%;">
+                                <h1 class="text-center" id="detalhesResultadosNameForecast" style="color: #ffffff;font-size: 27px;">Resultados - ---</h1>
                             </div>
-                            <div class="d-flex justify-content-center align-items-center col" style="margin-bottom: 15px;"><img class="d-inline-block" src="assets/img/hot.svg" width="76">
-                                <p id="detalhesTemperaturaMaximaTime" style="font-size: 35px;margin-left: 14px;">
-                                    --ºC<br></p>
+                            <div style="padding: 15px;">
+                                <div class="box"><select id="detalhesSelectTime"></select></div>
+                                <p id="detalhesDescriptionTime" style="font-size: 35px;margin-left: 14px;">-------</p>
+                                <p id="detalhesCurrentTempTime" style="font-size: 35px;margin-left: 14px;">-------</p><img id="detalhesImgTime" width="150">
+                                <div class="d-sm-flex align-items-sm-center">
+                                    <div class="d-flex justify-content-center align-items-center col" style="margin-top: 15px;margin-bottom: 15px;"><img class="d-inline-block" src="assets/img/cold.svg" width="76">
+                                        <p id="detalhesTemperaturaMinimaTime" style="font-size: 35px;margin-left: 14px;">--ºC<br></p>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center col" style="margin-bottom: 15px;"><img class="d-inline-block" src="assets/img/hot.svg" width="76">
+                                        <p id="detalhesTemperaturaMaximaTime" style="font-size: 35px;margin-left: 14px;">--ºC<br></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-    <div class="footer-basic">
-        <footer>
-            <p class="copyright">Weather Miniacs © 2019</p>
-        </footer>
+        <div id="footer" class="footer-basic">
+            <footer>
+                <p class="copyright">Weather Miniacs © 2019</p>
+            </footer>
+        </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -188,10 +177,12 @@
     <script src="assets/js/top.js"></script>
     <script src="assets/js/detalhes.js"></script>
     <script src="assets/js/search.js"></script>
+    <script src="assets/js/getip.js"></script>
     <script src="assets/js/sweet-alert/sweetalert2.min.js"></script>
     <script src="assets/js/sweet-alert/my-alerts.js"></script>
     <script src="assets/js/home.js"></script>
-    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/favourites.js"></script>
+    <script src="assets/js/load.js"></script>
 </body>
 
 </html>

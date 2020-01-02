@@ -7,7 +7,7 @@ var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 function getHomeCity(data) {
     $("#spanDayHomeLocation").text(days[d.getDay()]);
     $("#spanDateHomeLocation").text(d.getDate() + " " + months[d.getMonth()]);
-    $("#spanCityHomeLocation").text(data.location.city);
+    $("#spanCityHomeLocation").text(data.location.city + " - " + data.location.country);
     var homeCityData = { 'country': data.location.country, 'city': data.location.city };
     localStorage.setItem('homeCity', JSON.stringify(homeCityData));
     $.ajax({
@@ -24,7 +24,10 @@ function getHomeCity(data) {
             $("#spanHomeWindDerectionLocation").text(" " + degToDirecoes(msg.wind.deg));
         },
         error: function() {
-            erro("Something went wrong - Getting your city information!");
+            if (e.status == 404 || e.status == 403) {
+                getDadosDaCidadePrincipal("Something went wrong - Getting your city information!!");
+            }
+            console.log("GET CITY DATA BY IP ERROR CODE: " + e.status);
         }
     });
 }
@@ -33,7 +36,7 @@ function getHomeCity(data) {
 function getHomeCityDataIfFail(city, country) {
     $("#spanDayHomeLocation").text(days[d.getDay()]);
     $("#spanDateHomeLocation").text(d.getDate() + " " + months[d.getMonth()]);
-    $("#spanCityHomeLocation").text(city);
+    $("#spanCityHomeLocation").text(city + " - "+ country);
     $.ajax({
         type: "POST", //rest Type
         dataType: 'jsonp', //mispelled
@@ -51,9 +54,22 @@ function getHomeCityDataIfFail(city, country) {
         },
         error: function(e) {
             if (e.status == 404 || e.status == 403) {
-                erro("Something went wrong - Getting your city information!");
+                getDadosDaCidadePrincipal('<b style="color: #c0392b";>Something went wrong - Getting your city information!!</b>');
             }
-            console.log("GET CITY DATA ERROR CODE: " + e.status);
+            console.log("GET CITY DATA MANUAL ERROR CODE: " + e.status);
         }
     });
 }
+
+$("#homeButtonDetalhes").click(function() {
+    //vai buscar os favoritos para o arreio
+    var homeCity = JSON.parse(localStorage.getItem('homeCity'));
+
+    var currentCity = {
+        'country': homeCity.country,
+        'city': homeCity.city
+    };
+
+    localStorage.setItem('currentCity', JSON.stringify(currentCity));
+    window.location.href = 'search.html';
+});

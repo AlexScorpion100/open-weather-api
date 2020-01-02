@@ -29,6 +29,7 @@ var cityName = {
                 var currentCity = { 'country': value.sys.country, 'city': value.name };
                 localStorage.setItem('currentCity', JSON.stringify(currentCity));
             }
+              existeCidade();
         }
     },
     theme: "round",

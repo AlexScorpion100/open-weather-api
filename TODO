@@ -9,11 +9,15 @@
 - pesquisa vai direto para a pagina de pesquisa automaticamente ✔
 
 --------------------------------- 12/28/2019 ----------------------------------
-- search fazer a home city voltar a aparecer se nao houver nenhuma pesquisa
-- tentar resolver  o problema da estrela nao regista a primeira
-- quando se pesquisa a estrela nao muda consuante a cidade se ja ta nos favoritos ou  nao 
-- tentar por quando a ciadade nao foi encontrada pelo ip aparecer a inputs e nao deixar avançar a ser introduzido alguma coisa
-- fazer o for each para ir buscar os favoritos
-- por os butoes a funcionar para remover e ir para ver os detalhes das mesmas
-- fazer a home page aparecer os 6 ultimos favoritos adicionados
+- search fazer a home city voltar a aparecer se nao houver nenhuma pesquisa ✔
+- tentar resolver  o problema da estrela nao regista a primeira ✔
+- quando se pesquisa a estrela nao muda consuante a cidade se ja ta nos favoritos ou  nao ✔
+- tentar por quando a ciadade nao foi encontrada pelo ip aparecer a inputs e nao deixar avançar a ser introduzido alguma coisa ✔
+- fazer o for each para ir buscar os favoritos ✔
+- por os butoes a funcionar para remover e ir para ver os detalhes das mesmas ✔
+- fazer a home page aparecer os 6 ultimos favoritos adicionados ✔
 - problemas bom os errors de ajax tar sempre a aparecer a messagem de erro mesmo quando este pedido for sucesso ✔
+
+--------------------------------- 01/01/2020 ----------------------------------
+- fazer o botao dos detalhes a dar da cidade principal ✔
+- verificar se existe favoritos ou nao e aparecer uma messagem para adicionar favoritos
