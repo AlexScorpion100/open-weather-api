@@ -2,3 +2,5 @@
 This is a website create to check the weather using open weather api.
 
 ----------- Precisa de estar hopedado para funcionar corretamente -----------
+
+---- site hospdado em https://weather-miniacs.bss.design/ ----
