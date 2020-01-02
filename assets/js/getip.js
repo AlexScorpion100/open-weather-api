@@ -33,7 +33,7 @@ function getIp() {
 //Funcao devolve a localizaçao da pessoa
 function getIpData(ip) {
     $.ajax({
-        url: 'https://geo.ipify.org/api/v1?apiKey=at_sqVr1pCKRDNItTPKPQUsg45xB8EtU<>&ipAddress=' + ip,
+        url: 'https://geo.ipify.org/api/v1?apiKey=at_sqVr1pCKRDNItTPKPQUsg45xB8EtU&ipAddress=' + ip,
         dataType: 'application/json',
         complete: function(data) {
             var obj = JSON.parse(data.responseText);
