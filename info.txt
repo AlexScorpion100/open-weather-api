@@ -1,0 +1,9 @@
+2190754 - Alexandre Bertolo
+2190755 - Tome Nunes
+2190740 - Joao Patrocinio
+
+Pl1 Diurno 
+
+O website funciona melhor se for hospedado num servidor tipo xampp
+
+Onde o site está hospedado https://weather-miniacs.bss.design/ 
